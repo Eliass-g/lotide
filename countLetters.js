@@ -7,7 +7,7 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const countletters = function(str) {
+const countLetters = function(str) {
   const result = {};
   for (let chr of str) {
     if (result[chr] === undefined) {
