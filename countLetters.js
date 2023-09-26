@@ -1,4 +1,4 @@
-const assertEqual = function(actual, expected) {
+/* const assertEqual = function(actual, expected) {
   if (actual === expected) {
     return console.log(`🟢🟢🟢Assertion Passed: ${actual} === ${expected}`);
   }
@@ -6,10 +6,10 @@ const assertEqual = function(actual, expected) {
     return console.log(`🔴🔴🔴Assertion Failed: ${actual} !== ${expected}`);
   }
 };
-
-const countLetters = function(str) {
+ */
+const countLetters = function(string) {
   const result = {};
-  for (let chr of str) {
+  for (let chr of string) {
     if (result[chr] === undefined) {
       result[chr] = 1;
     } else {
@@ -19,13 +19,16 @@ const countLetters = function(str) {
   return result;
 };
 
-const test = countletters("www xx ;; yyyy z");
+//const test = countletters("www xx ;; yyyy z");
 
-assertEqual(test["w"], 3);
+
+module.exports = countLetters;
+
+/* assertEqual(test["w"], 3);
 assertEqual(test[" "], 4);
 assertEqual(test["x"], 2);
 assertEqual(test[";"], 2);
 assertEqual(test["y"], 4);
 assertEqual(test["z"], 1);
-assertEqual(test["z"], 5); // this one should fail, the rest should pass
+assertEqual(test["z"], 5); // this one should fail, the rest should pass */
 

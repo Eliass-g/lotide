@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@eliassg/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "Lotide, library of functions",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/Eliass-g/lotide.git"
   },
-  "author": "",
+  "author": "eliassg",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Eliass-g/lotide/issues"

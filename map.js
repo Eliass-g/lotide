@@ -1,4 +1,4 @@
-const eqArrays = function(arr1, arr2) {
+/* const eqArrays = function(arr1, arr2) {
   if (arr1.length !== arr2.length) {
     return false;
   }
@@ -17,7 +17,7 @@ const assertArraysEqual = function(actual, expected) {
   if (!eqArrays(actual, expected)) {
     return console.log(`🔴🔴🔴Assertion Failed: ${actual} !== ${expected}`);
   }
-};
+}; */
 
 const map = function(array, callback) {
   const results = [];
@@ -27,7 +27,9 @@ const map = function(array, callback) {
   return results;
 }
 
-assertArraysEqual(map(["ground", "control", "to", "major", "tom"], word => word[0]), [ 'g', 'c', 't', 'm', 't' ])
+module.exports = map;
+
+/* assertArraysEqual(map(["ground", "control", "to", "major", "tom"], word => word[0]), [ 'g', 'c', 't', 'm', 't' ])
 assertArraysEqual(map([1, 2, 3], num => num * 2), [2, 4, 6])
 assertArraysEqual(map([1, 2, 3], num => num + 1), [2, 4, 6])
-assertArraysEqual(map([1, 2, 3], num => num + 1), [2, 3, 4])
+assertArraysEqual(map([1, 2, 3], num => num + 1), [2, 3, 4]) */
